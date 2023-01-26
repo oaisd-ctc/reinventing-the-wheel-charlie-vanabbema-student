@@ -10,6 +10,7 @@ namespace MyUtilities
             {
                 z *= x;
             }
+            // Console.WriteLine(z);
             return z;
         }
         public static double Power(double x, double y)
@@ -19,29 +20,130 @@ namespace MyUtilities
             {
                 z *= x;
             }
+            // Console.WriteLine(z);
             return z;
         }
 
-        public static double SquareRoot(double x)
+        // public static double SquareRoot(double x)
+        // {
+        //     x = 64;
+
+        //     if (x > 0)
+        //     {
+        //         double root = x / 3;
+        //         double i;
+        //         for (i = 0; i < 32; i++)
+        //             root = (root + x / root) / 2;
+        //         Console.WriteLine("Squareroot:{0}", root);
+        //         return root;
+        //     }
+        //     else
+        //     {
+        //         Console.WriteLine(Double.NaN);
+        // return root;
+        //     }
+        // }
+
+        public static int AddNumbers(int x, int y)
         {
-            float precision = 0.0001f;
-            float min = 0;
-            float max = (float)x;
-            float result = 0;
-            while (max - min > precision)
-            {
-                result = (min + max) / 2;
-                if ((result * result) >= x)
-                {
-                    max = result;
-                }
-                else
-                {
-                    min = result;
-                }
-            }
-            return x;
+            int z = x + y;
+            return z;
         }
+        public static double AddNumbers(double x, double y)
+        {
+            double z = x + y;
+            return z;
+        }
+
+        public static int SubtractNum(int x, int y)
+        {
+            int z = x - y;
+            return z;
+        }
+
+        public static double SubtractNum(double x, double y)
+        {
+            double z = x - y;
+            return z;
+        }
+
+        public static int DivideNums(int x, int y)
+        {
+            int z = x / y;
+            return z;
+        }
+        public static double DivideNums(double x, double y)
+        {
+            double z = x / y;
+            return z;
+        }
+
+        public static double MultiplyNums(int x, int y)
+        {
+            int z = x * y;
+            return z;
+        }
+
+        public static double MultiplyNums(double x, double y)
+        {
+            double z = x * y;
+            return z;
+        }
+
+        public static int FindMax(int x, int y)
+        {
+            if (x > y)
+            {
+                int max = x;
+                return max;
+            }
+            else
+            {
+                int max = y;
+                return max;
+            }
+        }
+
+        public static double FindMax(double x, double y)
+        {
+            if (x > y)
+            {
+                double max = x;
+                return max;
+            }
+            else
+            {
+                double max = y;
+                return max;
+            }
+        }
+
+        public static int FindMin(int x, int y)
+        {
+            if (x>y)
+            {
+                int min = y;
+                return min;
+            }
+            else{
+                int min = x;
+                return min;
+            }
+        }
+
+        public static double FindMin(double x, double y)
+        {
+            if (x > y)
+            {
+                double min = y;
+                return min;
+            }
+            else{
+                double min = x;
+                return min;
+            }
+        }
+
 
 
 
