@@ -42,7 +42,7 @@ namespace MyUtilities
             {
                 count++;
             }
-            Console.WriteLine(count);
+            // Console.WriteLine(count);
             return Convert.ToString(count);
         }
 
