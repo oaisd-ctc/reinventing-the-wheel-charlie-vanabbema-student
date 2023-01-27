@@ -24,25 +24,39 @@ namespace MyUtilities
             return z;
         }
 
-        // public static double SquareRoot(double x)
-        // {
-        //     x = 64;
+        public static double SquareRoot(double x)
+        {
+            if (x < 2)
+                return x;
 
-        //     if (x > 0)
-        //     {
-        //         double root = x / 3;
-        //         double i;
-        //         for (i = 0; i < 32; i++)
-        //             root = (root + x / root) / 2;
-        //         Console.WriteLine("Squareroot:{0}", root);
-        //         return root;
-        //     }
-        //     else
-        //     {
-        //         Console.WriteLine(Double.NaN);
-        // return root;
-        //     }
-        // }
+            double y = x;
+            double z = (y + (x / y)) / 2;
+
+            while (MathUtils.AbsoluteValue(y - z) >= 0.000000000000000000001)
+            {
+                y = z;
+                z = (y + (x / y)) / 2;
+
+            }
+            return z;
+        }
+
+        public static int SquareRoot(int x)
+        {
+            if (x < 2)
+                return x;
+
+            int y = x;
+            int z = (y + (x / y)) / 2;
+
+            while (MathUtils.AbsoluteValue(y - z) >= 0.000000000000000000001)
+            {
+                y = z;
+                z = (y + (x / y)) / 2;
+
+            }
+            return z;
+        }
 
         public static int AddNumbers(int x, int y)
         {
@@ -120,12 +134,13 @@ namespace MyUtilities
 
         public static int FindMin(int x, int y)
         {
-            if (x>y)
+            if (x > y)
             {
                 int min = y;
                 return min;
             }
-            else{
+            else
+            {
                 int min = x;
                 return min;
             }
@@ -138,15 +153,97 @@ namespace MyUtilities
                 double min = y;
                 return min;
             }
-            else{
+            else
+            {
                 double min = x;
                 return min;
             }
         }
 
+        public static int AbsoluteValue(int x)
+        {
+            if (x < 0)
+            {
+                x = x * -1;
+                return x;
+            }
+            else
+            {
+                return x;
+            }
+        }
 
+        public static double AbsoluteValue(double x)
+        {
+            if (x < 0)
+            {
+                x = x * -1;
+                return x;
+            }
+            else
+            {
+                return x;
+            }
+        }
 
+        public static int Sign(int x)
+        {
+    
+            if (x > 0)
+            {
+                int y = 1;
+                return y;
+            }
+            else if(x < 0)
+            {
+                int y = -1;
+                return y;
+            }
+            else
+            {
+                int y = 0;
+                return y;
+            }
+        }
 
+        public static double Sign(double x)
+        {
+            if (x > 0)
+            {
+                double y = 1;
+                return y;
+            }
+            else if(x < 0)
+            {
+                double y = -1;
+                return y;
+            }
+            else
+            {
+                double y = 0;
+                return y;
+            }
+        }
 
+        public static double CubeRoot(int x)
+        {
+            if (x == 1)
+                return x;
+
+            double y = x;
+            double z = (y + (x / y)) / 3;
+
+            while (MathUtils.AbsoluteValue(y - z) >= 0.000000000000000000001)
+            {
+                y = z;
+                z = (y + (x / y)) / 3;
+                Console.WriteLine(z);
+            }
+            return z;
+        }
+
+        
+
+    
     }
 }
