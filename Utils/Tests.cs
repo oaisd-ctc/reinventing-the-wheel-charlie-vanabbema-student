@@ -109,6 +109,40 @@ public class Tests
 
         Assert.Equal(desiredResult, MathUtils.FindMin(x,y));
     }
+    [Fact]
+    public void AbsoluteValueTest()
+    {
+        int desiredResult = 4;
+        int x = -4;
 
+        Assert.Equal(desiredResult, MathUtils.AbsoluteValue(x));
+    }
+
+    [Fact]
+    public void SquareRootTest()
+    {
+        int desiredResult = 8;
+        int x = 64;
+
+        Assert.Equal(desiredResult, MathUtils.SquareRoot(x));
+    }
+
+    [Fact]
+    public void SignTest()
+    {
+        int desiredResult = 0;
+        int x = 0;
+
+        Assert.Equal(desiredResult, MathUtils.Sign(x));
+    }
+
+    [Fact]
+    public void CubeRootTest()
+    {
+        int desiredResult = 3;
+        int x = 27;
+
+        Assert.Equal(desiredResult, MathUtils.CubeRoot(x));
+    }
 
 }
