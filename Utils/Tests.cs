@@ -137,12 +137,14 @@ public class Tests
     }
 
     [Fact]
-    public void CubeRootTest()
+    public void AreaOfRectTest()
     {
-        int desiredResult = 3;
-        int x = 27;
+        int desiredResult = 12;
+        int x = 4;
+        int y = 3;
 
-        Assert.Equal(desiredResult, MathUtils.CubeRoot(x));
+
+        Assert.Equal(desiredResult, MathUtils.AreaOfRect(x,y));
     }
 
 }
