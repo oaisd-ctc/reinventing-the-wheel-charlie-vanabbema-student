@@ -32,7 +32,7 @@ namespace MyUtilities
             double y = x;
             double z = (y + (x / y)) / 2;
 
-            while (MathUtils.AbsoluteValue(y - z) >= 0.000000000000000000001)
+            while (MathUtils.AbsoluteValue(y - z) > 0)
             {
                 y = z;
                 z = (y + (x / y)) / 2;
@@ -49,7 +49,7 @@ namespace MyUtilities
             int y = x;
             int z = (y + (x / y)) / 2;
 
-            while (MathUtils.AbsoluteValue(y - z) >= 0.000000000000000000001)
+            while (MathUtils.AbsoluteValue(y - z) > 0)
             {
                 y = z;
                 z = (y + (x / y)) / 2;
@@ -186,15 +186,28 @@ namespace MyUtilities
             }
         }
 
+        public static decimal AbsoluteValue(decimal x)
+        {
+            if (x < 0)
+            {
+                x = x * -1;
+                return x;
+            }
+            else
+            {
+                return x;
+            }
+        }
+
         public static int Sign(int x)
         {
-    
+
             if (x > 0)
             {
                 int y = 1;
                 return y;
             }
-            else if(x < 0)
+            else if (x < 0)
             {
                 int y = -1;
                 return y;
@@ -213,7 +226,7 @@ namespace MyUtilities
                 double y = 1;
                 return y;
             }
-            else if(x < 0)
+            else if (x < 0)
             {
                 double y = -1;
                 return y;
@@ -225,25 +238,50 @@ namespace MyUtilities
             }
         }
 
-        public static double CubeRoot(int x)
+        public static int AreaOfRect(int length, int width)
         {
-            if (x == 1)
-                return x;
-
-            double y = x;
-            double z = (y + (x / y)) / 3;
-
-            while (MathUtils.AbsoluteValue(y - z) >= 0.000000000000000000001)
-            {
-                y = z;
-                z = (y + (x / y)) / 3;
-                Console.WriteLine(z);
-            }
-            return z;
+            int ans = length * width;
+            return ans;
         }
 
-        
+        public static double AreaOfRect(double length, double width)
+        {
+            double ans = length * width;
+            return ans;
+        }
 
-    
+        public static int AreaOfRhombus(int x, int y)
+        {
+            int rat = x * y;
+            int answer = rat / 2;
+            return answer;
+        }
+
+        public static double AreaOfRhombus(double x, double y)
+        {
+            double rat = x * y;
+            double answer = rat / 2;
+            return answer;
+        }
+
+        public static int SurfaceAreaOfCube(int x)
+        {
+            int rat = MathUtils.Power(x, 2);
+            int answer = (int) MathUtils.MultiplyNums(rat, 6);
+            
+            return answer;
+        }
+
+        public static double SurfaceAreaOfCube(double x)
+        {
+            double rat = MathUtils.Power(x, 2);
+            double answer = MathUtils.MultiplyNums(rat, 6);
+            return answer;
+        }
+
+
+
+
+
     }
 }
