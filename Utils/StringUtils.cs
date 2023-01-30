@@ -63,7 +63,6 @@ public static class StringUtils
             {
                 total++;
             }
-
         }
         return total;
     }
