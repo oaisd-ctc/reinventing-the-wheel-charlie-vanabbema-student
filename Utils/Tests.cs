@@ -147,4 +147,26 @@ public class Tests
         Assert.Equal(desiredResult, MathUtils.AreaOfRect(x,y));
     }
 
+    [Fact]
+    public void AreaOfRhombusTest()
+    {
+        double desiredResult = 21.45;
+        double x = 5.5;
+        double y = 7.8;
+
+        Assert.Equal(desiredResult, MathUtils.AreaOfRhombus(x,y));
+    }
+
+    [Fact]
+    public void SurfaceAreaOfCubeTest()
+    {
+        double desiredResult = 337.5;
+        double x = 7.5;
+
+        Assert.Equal(desiredResult, MathUtils.SurfaceAreaOfCube(x));
+    }
+
+
+
+
 }

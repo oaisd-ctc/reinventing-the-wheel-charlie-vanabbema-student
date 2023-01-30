@@ -249,7 +249,34 @@ namespace MyUtilities
             double ans = length * width;
             return ans;
         }
-        
+
+        public static int AreaOfRhombus(int x, int y)
+        {
+            int rat = x * y;
+            int answer = rat / 2;
+            return answer;
+        }
+
+        public static double AreaOfRhombus(double x, double y)
+        {
+            double rat = x * y;
+            double answer = rat / 2;
+            return answer;
+        }
+
+        public static int SurfaceAreaOfCube(int x)
+        {
+            int rat = MathUtils.Power(x, 2);
+            int answer = (int) MathUtils.MultiplyNums(rat, 6);
+            return answer;
+        }
+
+        public static double SurfaceAreaOfCube(double x)
+        {
+            double rat = MathUtils.Power(x, 2);
+            double answer = MathUtils.MultiplyNums(rat, 6);
+            return answer;
+        }
 
 
 
