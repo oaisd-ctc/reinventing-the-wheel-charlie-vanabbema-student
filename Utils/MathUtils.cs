@@ -268,6 +268,7 @@ namespace MyUtilities
         {
             int rat = MathUtils.Power(x, 2);
             int answer = (int) MathUtils.MultiplyNums(rat, 6);
+            
             return answer;
         }
 
