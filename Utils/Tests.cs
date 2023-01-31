@@ -7,10 +7,10 @@ public class Tests
     [Fact]
     public void ToUpperTest()
     {
-        string lowercase = "hello world";
+        string input = "hello world";
         string desiredResult = "HELLO WORLD";
 
-        Assert.Equal(desiredResult, StringUtils.ToUpper(lowercase));
+        Assert.Equal(desiredResult, StringUtils.ToUpper(input));
     }
 
 
