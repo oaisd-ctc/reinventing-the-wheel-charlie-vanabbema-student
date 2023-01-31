@@ -10,7 +10,6 @@ namespace MyUtilities
             {
                 z *= x;
             }
-            // Console.WriteLine(z);
             return z;
         }
         public static double Power(double x, double y)
@@ -20,7 +19,6 @@ namespace MyUtilities
             {
                 z *= x;
             }
-            // Console.WriteLine(z);
             return z;
         }
 
@@ -279,6 +277,21 @@ namespace MyUtilities
             return answer;
         }
 
+        // public static void Random()
+        // {
+        //     int M = 45864;
+        //     int A = 6783;
+
+        //     int Q = M / A;
+        //     int R = M % A;
+
+        //     number = (A * (number mod Q)    ) -
+        //              (R * floor(number / Q));
+
+        //     if (number is negative)
+        //         number = number + M;
+        //     end
+        // }
 
 
 
