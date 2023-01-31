@@ -267,8 +267,8 @@ namespace MyUtilities
         public static int SurfaceAreaOfCube(int x)
         {
             int rat = MathUtils.Power(x, 2);
-            int answer = (int) MathUtils.MultiplyNums(rat, 6);
-            
+            int answer = (int)MathUtils.MultiplyNums(rat, 6);
+
             return answer;
         }
 

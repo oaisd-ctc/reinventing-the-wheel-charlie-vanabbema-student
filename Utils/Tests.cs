@@ -50,14 +50,14 @@ public class Tests
         Assert.Equal(desiredResult, MathUtils.Power(input, input));
     }
 
-    // [Fact]
-    // public void SqRtTest()
-    // {
-    //     double desiredResult = 8;
-    //     double input = 64;
+    [Fact]
+    public void SqRtTest()
+    {
+        double desiredResult = 8;
+        double input = 64;
 
-    //     Assert.Equal(desiredResult, MathUtils.SquareRoot(input));
-    // }
+        Assert.Equal(desiredResult, MathUtils.SquareRoot(input));
+    }
 
     [Fact]
     public void AddNumbersTest()
@@ -77,7 +77,7 @@ public class Tests
         double x = 10;
         double y = 6;
 
-        Assert.Equal(desiredResult, Math.Round(MathUtils.DivideNums(x, y),2));
+        Assert.Equal(desiredResult, Math.Round(MathUtils.DivideNums(x, y), 2));
     }
 
     [Fact]
@@ -87,7 +87,7 @@ public class Tests
         double x = 3;
         double y = 2;
 
-        Assert.Equal(desiredResult, MathUtils.MultiplyNums(x,y));
+        Assert.Equal(desiredResult, MathUtils.MultiplyNums(x, y));
     }
 
     [Fact]
@@ -97,7 +97,7 @@ public class Tests
         double x = 3.549;
         double y = 8.15;
 
-        Assert.Equal(desiredResult, MathUtils.FindMax(x,y));
+        Assert.Equal(desiredResult, MathUtils.FindMax(x, y));
     }
 
     [Fact]
@@ -107,7 +107,7 @@ public class Tests
         double x = 3;
         double y = 5;
 
-        Assert.Equal(desiredResult, MathUtils.FindMin(x,y));
+        Assert.Equal(desiredResult, MathUtils.FindMin(x, y));
     }
     [Fact]
     public void AbsoluteValueTest()
@@ -144,7 +144,7 @@ public class Tests
         int y = 3;
 
 
-        Assert.Equal(desiredResult, MathUtils.AreaOfRect(x,y));
+        Assert.Equal(desiredResult, MathUtils.AreaOfRect(x, y));
     }
 
     [Fact]
@@ -154,7 +154,7 @@ public class Tests
         double x = 5.5;
         double y = 7.8;
 
-        Assert.Equal(desiredResult, MathUtils.AreaOfRhombus(x,y));
+        Assert.Equal(desiredResult, MathUtils.AreaOfRhombus(x, y));
     }
 
     [Fact]
@@ -166,7 +166,41 @@ public class Tests
         Assert.Equal(desiredResult, MathUtils.SurfaceAreaOfCube(x));
     }
 
+    [Fact]
+    public void FindLengthTest()
+    {
+        double desiredResult = 3;
+        int[] x = { 3, 9, 4 };
+
+        Assert.Equal(desiredResult, ArrayUtils.FindLength(x));
+    }
 
 
+    [Fact]
+    public void FindAverageTest()
+    {
+        double desiredResult = 5.3333333;
+        double[] x = { 3, 9, 4 };
+        Assert.Equal(desiredResult, Math.Round(ArrayUtils.FindAverage(x), 7));
+
+    }
+
+    [Fact]
+    public void FindMaxArrayTest()
+    {
+        int desiredResult = 6;
+        int[] x = new int[] { 3, 6 , 4};
+        Assert.Equal(desiredResult, ArrayUtils.FindMax(x));
+    }
+
+    [Fact]
+    public void FindMinArrayTest()
+    {
+     double desiredResult = 4;
+     double[] x = new double[] {6, 4, 5};
+     Assert.Equal(desiredResult, ArrayUtils.FindMin(x));   
+    }
+
+    
 
 }
