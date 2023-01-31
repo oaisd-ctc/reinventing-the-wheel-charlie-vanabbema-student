@@ -29,10 +29,14 @@ public static string ToUpper(string input)
 
 
 ### "ToUpper" Method Implementation
-#### To implement the "ToUpper" method, you must reference its class (StringUtils) and type the correct method (ToUpper) as shown below. Enter the argument between the parenthesis.
+#### To implement the "ToUpper" method, you must reference its class (StringUtils) and the correct method (ToUpper) as shown below. Enter the argument between the parenthesis.
 ``` Csharp
 StringUtils.ToUpper(input)
 ```
+
+### ToLower Method
+
+The "ToLower" method allows the implementor to convert uppercase characters in a string into lowercase characters.
 
 ### ***Images***
 ![some_image_here](some_filepath_here)
