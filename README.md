@@ -29,7 +29,7 @@ public static string ToUpper(string input)
 
 
 ### "ToUpper" Method Implementation
-#### To implement the "ToUpper" method, you must reference its class (StringUtils) and type the correct method (ToUpper) as shown below. Enter the parameter between the parenthesis.
+#### To implement the "ToUpper" method, you must reference its class (StringUtils) and type the correct method (ToUpper) as shown below. Enter the argument between the parenthesis.
 ``` Csharp
 StringUtils.ToUpper(input)
 ```
