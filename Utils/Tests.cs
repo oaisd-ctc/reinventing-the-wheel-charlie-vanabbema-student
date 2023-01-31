@@ -212,7 +212,7 @@ public class Tests
     [Fact]
     public void FindProductTest()
     {
-        double desiredResult = 24;
+        double desiredResult = 39.375;
         double[] x = new double[] { 2.5, 3.5, 4.5 };
         Assert.Equal(desiredResult, ArrayUtils.FindProduct(x));
     }
