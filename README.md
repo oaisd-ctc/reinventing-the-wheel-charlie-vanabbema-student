@@ -1,1 +1,26 @@
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-f4981d0f882b2a3f0472912d15f9806d57e124e0fc890972558857b51b24a6f9.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=9799791)
+## _Markdown_
+
+
+
+### ***Code Snippets***
+
+``` Csharp
+string[] names = { "John", "Mario", "Hunter", "Gabe", "Layne" };
+
+// Write each name in names
+foreach(string name in names)
+{
+    Console.WriteLine(name);
+}
+```
+
+### ***Images***
+![some_image_here](some_filepath_here)
+*Here's a super helpful caption*
+
+### ***Admonition***
+> :warning: **Warning:** Do not push the big red button.
+
+> :memo: **Note:** Sunrises are beautiful.
+
+> :bulb: **Tip:** Remember to appreciate the little things in life.
