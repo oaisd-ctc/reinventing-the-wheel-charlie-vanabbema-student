@@ -3,6 +3,17 @@ namespace MyUtilities
 
     public static class MathUtils
     {
+    /// <summary>
+    /// Calculates an int to the power of another int.
+    /// </summary>
+    /// <param name="x">The int.</param>
+    /// <param name="y">The power.</param>
+    /// <returns>
+    /// An int answer.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static int Power(int x, int y)
         {
             int z = x;
@@ -12,6 +23,17 @@ namespace MyUtilities
             }
             return z;
         }
+    /// <summary>
+    /// Calculates an int to the power of another int.
+    /// </summary>
+    /// <param name="x">The double.</param>
+    /// <param name="y">The power.</param>
+    /// <returns>
+    /// A double answer.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static double Power(double x, double y)
         {
             double z = x;
@@ -21,7 +43,16 @@ namespace MyUtilities
             }
             return z;
         }
-
+    /// <summary>
+    /// Calculates the square root of a double.
+    /// </summary>
+    /// <param name="x">The double.</param>
+    /// <returns>
+    /// The squareroot.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static double SquareRoot(double x)
         {
             if (x < 2)
@@ -38,7 +69,16 @@ namespace MyUtilities
             }
             return z;
         }
-
+    /// <summary>
+    /// Calculates the square root of an int.
+    /// </summary>
+    /// <param name="x">The int.</param>
+    /// <returns>
+    /// The squareroot.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static int SquareRoot(int x)
         {
             if (x < 2)
@@ -55,53 +95,145 @@ namespace MyUtilities
             }
             return z;
         }
-
+    /// <summary>
+    /// Calculates the sum of two ints.
+    /// </summary>
+    /// <param name="x">The int.</param>
+    /// <param name="y">The other int.</param>
+    /// <returns>
+    /// The sum.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static int AddNumbers(int x, int y)
         {
             int z = x + y;
             return z;
         }
+    /// <summary>
+    /// Calculates the sum of two doubless.
+    /// </summary>
+    /// <param name="x">The double.</param>
+    /// <param name="y">The other double.</param>
+    /// <returns>
+    /// The sum.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static double AddNumbers(double x, double y)
         {
             double z = x + y;
             return z;
         }
-
+    /// <summary>
+    /// Calculates the difference of two ints.
+    /// </summary>
+    /// <param name="x">The int.</param>
+    /// <param name="y">The other int.</param>
+    /// <returns>
+    /// The difference.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static int SubtractNum(int x, int y)
         {
             int z = x - y;
             return z;
         }
-
+    /// <summary>
+    /// Calculates the difference of two doubless.
+    /// </summary>
+    /// <param name="x">The double.</param>
+    /// <param name="y">The other double.</param>
+    /// <returns>
+    /// The difference.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static double SubtractNum(double x, double y)
         {
             double z = x - y;
             return z;
         }
-
+    /// <summary>
+    /// Calculates the division of two ints.
+    /// </summary>
+    /// <param name="x">The int.</param>
+    /// <param name="y">The other int.</param>
+    /// <returns>
+    /// The answer.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static int DivideNums(int x, int y)
         {
             int z = x / y;
             return z;
         }
+    /// <summary>
+    /// Calculates the division of two doubless.
+    /// </summary>
+    /// <param name="x">The double.</param>
+    /// <param name="x">The other double.</param>
+    /// <returns>
+    /// The answer.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static double DivideNums(double x, double y)
         {
             double z = x / y;
             return z;
         }
-
+    /// <summary>
+    /// Calculates the product of two ints.
+    /// </summary>
+    /// <param name="x">The int.</param>
+    /// <param name="y">The other int.</param>
+    /// <returns>
+    /// The product.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static double MultiplyNums(int x, int y)
         {
             int z = x * y;
             return z;
         }
-
+    /// <summary>
+    /// Calculates the product of two doubless.
+    /// </summary>
+    /// <param name="x">The double.</param>
+    /// <param name="y">The other double.</param>
+    /// <returns>
+    /// The product.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static double MultiplyNums(double x, double y)
         {
             double z = x * y;
             return z;
         }
-
+    /// <summary>
+    /// Determines the larger of two ints.
+    /// </summary>
+    /// <param name="x">The int.</param>
+    /// <param name="y">The other int.</param>
+    /// <returns>
+    /// The max.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static int FindMax(int x, int y)
         {
             if (x > y)
@@ -115,7 +247,17 @@ namespace MyUtilities
                 return max;
             }
         }
-
+    /// <summary>
+    /// Determines the larger of two doubles.
+    /// </summary>
+    /// <param name="x">The double.</param>
+    /// <param name="y">The other double.</param>
+    /// <returns>
+    /// The max.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static double FindMax(double x, double y)
         {
             if (x > y)
@@ -129,7 +271,17 @@ namespace MyUtilities
                 return max;
             }
         }
-
+    /// <summary>
+    /// Determines the smaller of two ints.
+    /// </summary>
+    /// <param name="x">The int.</param>
+    /// <param name="y">The other int.</param>
+    /// <returns>
+    /// The min.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static int FindMin(int x, int y)
         {
             if (x > y)
@@ -143,7 +295,17 @@ namespace MyUtilities
                 return min;
             }
         }
-
+    /// <summary>
+    /// Determines the smaller of two doubles.
+    /// </summary>
+    /// <param name="x">The double.</param>
+    /// <param name="y">The other double.</param>
+    /// <returns>
+    /// The min.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static double FindMin(double x, double y)
         {
             if (x > y)
@@ -157,7 +319,16 @@ namespace MyUtilities
                 return min;
             }
         }
-
+    /// <summary>
+    /// Determines the absolute value of an int.
+    /// </summary>
+    /// <param name="x">The int.</param>
+    /// <returns>
+    /// The absolutevalue.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static int AbsoluteValue(int x)
         {
             if (x < 0)
@@ -170,7 +341,16 @@ namespace MyUtilities
                 return x;
             }
         }
-
+    /// <summary>
+    /// Determines the absolute value of a double.
+    /// </summary>
+    /// <param name="x">The double.</param>
+    /// <returns>
+    /// The absolutevalue.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static double AbsoluteValue(double x)
         {
             if (x < 0)
@@ -183,7 +363,16 @@ namespace MyUtilities
                 return x;
             }
         }
-
+    /// <summary>
+    /// Determines the absolute value of a decimal.
+    /// </summary>
+    /// <param name="x">The decimal.</param>
+    /// <returns>
+    /// The absolutevalue.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static decimal AbsoluteValue(decimal x)
         {
             if (x < 0)
@@ -196,7 +385,16 @@ namespace MyUtilities
                 return x;
             }
         }
-
+    /// <summary>
+    /// Determines the sign of an int.
+    /// </summary>
+    /// <param name="x">The double.</param>
+    /// <returns>
+    /// The sign.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static int Sign(int x)
         {
 
@@ -216,7 +414,16 @@ namespace MyUtilities
                 return y;
             }
         }
-
+    /// <summary>
+    /// Determines the sign of a double.
+    /// </summary>
+    /// <param name="x">The double.</param>
+    /// <returns>
+    /// The sign.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static double Sign(double x)
         {
             if (x > 0)
@@ -235,33 +442,82 @@ namespace MyUtilities
                 return y;
             }
         }
-
+    /// <summary>
+    /// Determines the area of a rectangle.
+    /// </summary>
+    /// <param name="length">The length.</param>
+    /// <param name="width">The width.</param>
+    /// <returns>
+    /// The area.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static int AreaOfRect(int length, int width)
         {
             int ans = length * width;
             return ans;
         }
-
+    /// <summary>
+    /// Determines the area of a rectangle.
+    /// </summary>
+    /// <param name="length">The length.</param>
+    /// <param name="width">The width.</param>
+    /// <returns>
+    /// The area.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static double AreaOfRect(double length, double width)
         {
             double ans = length * width;
             return ans;
         }
-
+    /// <summary>
+    /// Determines the area of a rhombus.
+    /// </summary>
+    /// <param name="x">The diagonal.</param>
+    /// <param name="y">The other diagonal.</param>
+    /// <returns>
+    /// The area.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static int AreaOfRhombus(int x, int y)
         {
             int rat = x * y;
             int answer = rat / 2;
             return answer;
         }
-
+    /// <summary>
+    /// Determines the area of a rhombus.
+    /// </summary>
+    /// <param name="x">The diagonal.</param>
+    /// <param name="y">The other diagonal.</param>
+    /// <returns>
+    /// The area.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static double AreaOfRhombus(double x, double y)
         {
             double rat = x * y;
             double answer = rat / 2;
             return answer;
         }
-
+    /// <summary>
+    /// Determines the surface area of a cube.
+    /// </summary>
+    /// <param name="x">The side length.</param>
+    /// <returns>
+    /// The surface area.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static int SurfaceAreaOfCube(int x)
         {
             int rat = MathUtils.Power(x, 2);
@@ -269,7 +525,16 @@ namespace MyUtilities
 
             return answer;
         }
-
+    /// <summary>
+    /// Determines the surface area of a cube.
+    /// </summary>
+    /// <param name="x">The side length.</param>
+    /// <returns>
+    /// The surface area.
+    /// </returns>
+    /// <remarks>
+    /// For use with local systems
+    /// </remarks>
         public static double SurfaceAreaOfCube(double x)
         {
             double rat = MathUtils.Power(x, 2);
