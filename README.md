@@ -1,13 +1,14 @@
 # Reinventing The Wheel
 ### Developed By: Charlie Van Abbema and Blair Ciolk
 #
-
+## *What is it?*
+#### This package is an all-in-one utility tool for those who might need more methods for their projects.
+#
 ## ***Code Snippets, Uses and Descriptions***
-
-## String Utilites
+##String Utilites
 ### ToUpper Method
 
-The "ToUpper" method changes any lowercase character in a string into its uppercase counterpart.
+The ToUpper method changes any lowercase character in a string into its uppercase counterpart.
 
 ``` Csharp
 public static string ToUpper(string input)
@@ -25,18 +26,45 @@ public static string ToUpper(string input)
             return output;
         }
 ``` 
-*This method uses ASCII codes to swap out the letters for uppercase*
+*This method uses ASCII codes to swap out the letters for uppercase.*
 
 
-### "ToUpper" Method Implementation
-#### To implement the "ToUpper" method, you must reference its class (StringUtils) and the correct method (ToUpper) as shown below. Enter the argument between the parenthesis.
+### ToUpper Method Implementation
+#### To implement the ToUpper method, you must reference its class (StringUtils) and the correct method (ToUpper) as shown below. Enter the argument between the parenthesis.
 ``` Csharp
 StringUtils.ToUpper(input)
 ```
 
 ### ToLower Method
 
-The "ToLower" method allows the implementor to convert uppercase characters in a string into lowercase characters.
+The ToLower method allows the implementor to convert uppercase characters in a string into lowercase characters.
+```Csharp
+public static string ToLower(string input)
+    {
+        string output = "";
+        for (int i = 0; i < input.Length; i++)
+        {
+            if (input[i] >= 'A' && input[i] <= 'Z')
+            {
+                output += (char)(input[i] - 'A' + 'a');
+            }
+            else
+                output += input[i];
+        }
+        return output;
+    }
+```
+*This method also uses ASCII codes.*
+
+### ToLower Method Implementation
+
+#### To implement the ToLower method, you must reference its class (StringUtils) and the correct method (ToLower) as shown below. Enter the argument between the paranthesis.
+```Csharp
+StringUtils.ToLower(input)
+```
+
+### Length Method
+#### The length method allows the implementor to count how many characters are in a string.
 
 ### ***Images***
 ![some_image_here](some_filepath_here)

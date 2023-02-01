@@ -135,6 +135,16 @@ public class Tests
     }
 
     [Fact]
+    public void SubtractNumTest()
+    {
+        double desiredResult = 26.310000000000002;
+        double x = 155.28;
+        double y = 128.97;
+        Assert.Equal(desiredResult, MathUtils.SubtractNum(x, y));
+    }
+
+
+    [Fact]
     public void AddNumbersTest()
     {
 
