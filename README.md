@@ -2,8 +2,8 @@
 ### Developed By: Charlie Van Abbema and Blair Ciolk
 
 ## ***Code Snippets, Uses and Descriptions***
-## String Utilites
-### ToUpper Method
+> ## String Utilites
+ ### ToUpper Method
 
 The ToUpper method changes any lowercase character in a string into its uppercase counterpart.
 
@@ -83,9 +83,64 @@ public static int Length(string input)
 StringUtils.Length(input);
 ```
 
+### Reverse Method
+#### The Reverse method allows the implementor to reverse a given string.
+```Csharp
+public static string Reverse(string input)
+    {
+        string reverse = "";
+        for (int i = input.Length - 1; i > -1; i--)
+        {
+            reverse += input[i];
+        }
+        return reverse;
+    }
+```
+### Reverse Method Implementation
+#### To implement the Reverse method, you must reference its class (StringUtils) and the correct method (Reverse) as shown below. Enter the argument between the parenthesis.
+```Csharp
+StringUtils.Reverse(input);
+```
 
-# > FAQ:
-Frequently Asked Questions Below:
+### CountVowels Method
+#### The CountVowels method allows the implementor to count the vowels in a given string.
+```Csharp
+public static int CountVowels(string input)
+    {
+        int total = 0;
+        input = StringUtils.ToLower(input);
+        for (int i = 0; i < input.Length; i++)
+        {
+            if (input[i] == 'a' || input[i] == 'e' || input[i] == 'i' || input[i] == 'o' || input[i] == 'u')
+            {
+                total++;
+            }
+        }
+        return total;
+    }
+```
+### CountConsonants Method
+#### The CountConsonants method allows the implementor to count the consonants in a given string.
+```Csharp
+public static int CountConsonants(string input)
+    {
+        int total = 0;
+        input = StringUtils.ToLower(input);
+        for (int i = 0; i < input.Length; i++)
+        {
+            if (!(input[i] == 'a' || input[i] == 'e' || input[i] == 'i' || input[i] == 'o' || input[i] == 'u'))
+            {
+                total++;
+            }
+
+        }
+        return total;
+    }
+```
+### CountConsonants
+
+
+#  FAQ:
 ## *What is **Reinventing the Wheel?***
 #### **Reinventing the Wheel** is an all-in-one utility tool for those who might need more methods for their projects.  
   
