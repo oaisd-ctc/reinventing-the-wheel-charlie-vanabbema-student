@@ -62,11 +62,32 @@ StringUtils.ToLower(input)
 
 ### Length Method
 #### The length method allows the implementor to count how many characters are in a string.
+```Csharp
+public static int Length(string input)
+    {
 
+        int count = 0;
+        for (int i = 0; i < input.Length; i++)
+        {
+            count++;
+        }
+        return count;
+    }
+```
+#### *I think this one has an error ngl*
+### Length Method Implementation
+
+####  To implement the Length method, you must reference its class (StringUtils) and the correct method (Length) as shown below. Enter the argument between the paranthesis.
+###### :bulb: Tip: Using the correct class is crucial for using the correct method
+```Csharp
+StringUtils.Length(input);
+```
+# 
+#
 # FAQ:
 ## *What is **Reinventing the Wheel?***
-#### **Reinventing the Wheel** is an all-in-one utility tool for those who might need more methods for their projects.
-
+#### **Reinventing the Wheel** is an all-in-one utility tool for those who might need more methods for their projects.  
+  
 ## *Why was this package made?*
 #### The main goal of this project was to help other people with methods that they cannot figure out with pre-made methods that are easily integrated within your code. 
 
