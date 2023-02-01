@@ -1,11 +1,8 @@
 # Reinventing The Wheel
 ### Developed By: Charlie Van Abbema and Blair Ciolk
 #
-## *What is it?*
-#### This package is an all-in-one utility tool for those who might need more methods for their projects.
-#
 ## ***Code Snippets, Uses and Descriptions***
-##String Utilites
+## String Utilites
 ### ToUpper Method
 
 The ToUpper method changes any lowercase character in a string into its uppercase counterpart.
@@ -65,7 +62,14 @@ StringUtils.ToLower(input)
 
 ### Length Method
 #### The length method allows the implementor to count how many characters are in a string.
-
+#
+# FAQ:
+## *What is **Reinventing the Wheel?***
+#### **Reinventing the Wheel** is an all-in-one utility tool for those who might need more methods for their projects.
+#
+## *Why was this package made?*
+#### The main goal of this project was to help other people with methods that they cannot figure out with pre-made methods that are easily integrated within your code. 
+#
 ### ***Images***
 ![some_image_here](some_filepath_here)
 *Here's a super helpful caption*
