@@ -74,17 +74,17 @@ public static int Length(string input)
         return count;
     }
 ```
-#### *I think this one has an error ngl*
+#### I think this one has an error ngl
 ### Length Method Implementation
 
 ####  To implement the Length method, you must reference its class (StringUtils) and the correct method (Length) as shown below. Enter the argument between the paranthesis.
-###### :bulb: Tip: Using the correct class is crucial for using the correct method
+###### :bulb: Tip: Using the correct class is crucial for using the correct method, as some classes might share method names.
 ```Csharp
 StringUtils.Length(input);
 ```
 
 
-# FAQ:
+# > FAQ:
 Frequently Asked Questions Below:
 ## *What is **Reinventing the Wheel?***
 #### **Reinventing the Wheel** is an all-in-one utility tool for those who might need more methods for their projects.  
