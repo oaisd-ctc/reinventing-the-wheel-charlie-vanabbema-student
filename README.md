@@ -6,8 +6,8 @@
  ### ToUpper Method
 
 The ToUpper method changes any lowercase character in a string into its uppercase counterpart.
-#### Input: (String) Input
-#### Output: (String)
+##### Input: (String) Input
+##### Output: (String)
 
 ``` Csharp
 public static string ToUpper(string input)
@@ -37,8 +37,8 @@ StringUtils.ToUpper(input)
 ### ToLower Method
 
 The ToLower method allows the implementor to convert uppercase characters in a string into lowercase characters.
-#### Input: (String) Input
-#### Output: (String)
+##### Input: (String) Input
+##### Output: (String)
 ```Csharp
 public static string ToLower(string input)
     {
@@ -66,8 +66,8 @@ StringUtils.ToLower(input)
 
 ### Length Method
 #### The length method allows the implementor to count how many characters are in a string.
-#### Input: (String) Input
-#### Output: (Int)
+##### Input: (String) Input
+##### Output: (Int)
 ```Csharp
 public static int Length(string input)
     {
@@ -91,8 +91,8 @@ StringUtils.Length(input);
 
 ### Reverse Method
 #### The Reverse method allows the implementor to reverse a given string.
-#### Input: (String) Input
-#### Output: (String)
+##### Input: (String) Input
+##### Output: (String)
 ```Csharp
 public static string Reverse(string input)
     {
@@ -112,8 +112,8 @@ StringUtils.Reverse(input);
 
 ### CountVowels Method
 #### The CountVowels method allows the implementor to count the vowels in a given string.
-#### Input: (String) Input
-#### Output: (Int)
+##### Input: (String) Input
+##### Output: (Int)
 ```Csharp
 public static int CountVowels(string input)
     {
@@ -131,8 +131,8 @@ public static int CountVowels(string input)
 ```
 ### CountConsonants Method
 #### The CountConsonants method allows the implementor to count the consonants in a given string.
-#### Input: (String) Input
-#### Output: (Int)
+##### Input: (String) Input
+##### Output: (Int)
 ```Csharp
 public static int CountConsonants(string input)
     {
@@ -157,8 +157,8 @@ StringUtils.CountConsonants(example);
 
 ### HasLetter Method
 #### The HasLetter method allows the implementor to check a string for a certain letter.
-#### Input: (Char) Letter, (String) Input
-#### Output: (Bool)
+##### Input: (Char) Letter, (String) Input
+##### Output: (Bool)
 ```Csharp
 public static bool HasLetter(char letter, string input)
     {
