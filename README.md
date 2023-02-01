@@ -82,9 +82,10 @@ public static int Length(string input)
 ```Csharp
 StringUtils.Length(input);
 ```
-# 
-#
+
+
 # FAQ:
+Frequently Asked Questions Below:
 ## *What is **Reinventing the Wheel?***
 #### **Reinventing the Wheel** is an all-in-one utility tool for those who might need more methods for their projects.  
   
