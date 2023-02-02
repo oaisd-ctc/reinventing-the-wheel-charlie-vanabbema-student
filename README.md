@@ -129,6 +129,12 @@ public static int CountVowels(string input)
         return total;
     }
 ```
+### CountVowels Method Implementation
+#### To implement the CountVowels method, you must reference its class (StringUtils) and the correct method (CountVowels) as shown below. Enter the argument between the parenthesis.
+```Csharp
+StringUtils.CountVowels(input);
+```
+
 ### CountConsonants Method
 #### The CountConsonants method allows the implementor to count the consonants in a given string.
 ##### Input: (String) Input
