@@ -589,9 +589,151 @@ MathUtils.AreaOfRhombus(x, y);
 MathUtils.SurfaceAreaOfCube(x);
 ```
 > ## Array Utilities
-### FindAverage Method
-####
 
+
+### FindAverage Method
+#### The FindAverage method allows the implementor to find the average value of the given array.
+##### Input: (Int[], Double[], Decimal[]) x
+##### Output: (Int, Double, Decimal)
+```Csharp
+public static int FindAverage(int[] x)
+        {
+            int length = 0;
+
+            int result = 0;
+            foreach (var y in x)
+            {
+                result += y;
+                length = length++;
+            }
+            length = ArrayUtils.FindLength(x);
+            result = result / length;
+
+
+            return result;
+        }
+```
+### FindAverage Method Implementation
+#### To implement the FindAverage method, you must first reference its class (ArrayUtils) and the correct method (FindAverage) as shown below. Enter an argument between the parenthesis.
+```Csharp
+ArrayUtils.FindAverage(x[]);
+```
+
+### FindLength Method
+#### The FindLength method allows the implementor to find the length of the given array.
+##### Input: (Int[], Double[], Decimal[]) x
+##### Output: (Int, Double, Decimal)
+```Csharp
+public static int FindLength(int[] x)
+        {
+            var length = 0;
+            foreach (var y in x)
+            {
+                length++;
+            }
+            return length;
+        }
+```
+
+### FindLength Method Implementation
+#### To implement the FindLength method, you must first reference its class (ArrayUtils) and the correct method (FindLength) as shown below. Enter an argument between the parenthesis.
+```Csharp
+ArrayUtils.FindLength(x[]);
+```
+
+### FindMax Method
+#### The FindMax method allows the implementor to find the max value in a given array.
+##### Input: (Int[], Double[], Decimal[]) x
+##### Output: (Int, Double, Decimal)
+```Csharp
+public static int FindMax(int[] x)
+        {
+            int max = 0;
+            int min = 0;
+            foreach (int y in x)
+                if (y > max)
+                    max = y;
+                else
+                    min = y;
+            return max;
+        }
+```
+
+### FindMax Method Implementation
+#### To implement the FindMax method, you must first reference its class (ArrayUtils) and the correct method (FindLength) as shown below. Enter an argument between the parenthesis.
+```Csharp
+ArrayUtils.FindMax(x[]);
+```
+
+### FindMin Method
+#### The FindMin method allows the implementor to find the minimum value in a given array.
+##### Input: (Int[], Double[], Decimal[]) x
+##### Output: (Int, Double, Decimal)
+```Csharp
+public static int FindMin(int[] x)
+        {
+            int[] testArray = { 3, 6, 4 };
+            int i = 0;
+            int small = 0;
+
+            small = testArray[0];
+            for (i = 1; i < ArrayUtils.FindLength(x); i++)
+            {
+                if (small > x[i])
+                    small = x[i];
+            }
+            return small;
+        }
+```
+### FindMin Method Implementation
+#### To implement the FindMin method, you must first reference its class (ArrayUtils) and the correct method (FindMin) as shown below. Enter an argument between the parenthesis.
+```Csharp
+ArrayUtils.FindMin(x[]);
+```
+
+### FindSum Method
+#### The FindSum method allows the implementor to find the sum of all values in a given array.
+##### Input: (Int[], Double[], Decimal[]) x
+##### Output: (Int, Double, Decimal)
+```Csharp
+public static int FindSum(int[] x)
+        {
+
+            int result = 0;
+            foreach (var y in x)
+            {
+                result += y;
+            }
+            return result;
+        }
+```
+### FindSum Method Implementation
+#### To implement the FindSum method, you must first reference its class (ArrayUtils) and the correct method (FindSum) as shown below. Enter an argument between the parenthesis.
+```Csharp
+ArrayUtils.FindSum(x[]);
+```
+
+### FindProduct Method
+#### The FindProduct method allows the implementor to find the product of all values in a given array.
+##### Input: (Int[], Double[], Decimal[]) x
+##### Output: (Int, Double, Decimal)
+```Csharp
+public static int FindProduct(int[] x)
+        {
+
+            int result = 1;
+            foreach (var y in x)
+            {
+                result *= y;
+            }
+            return result;
+        }
+```
+### FindProduct Method Implementation
+#### To implement the FindProduct method, you must first reference its class (ArrayUtils) and the correct method (FindProduct) as shown below. Enter an argument between the parenthesis.`
+```Csharp
+ArrayUtils.FindProduct(x[]);
+```
 
 
 
