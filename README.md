@@ -29,7 +29,7 @@ public static string ToUpper(string input)
 
 
 ### ToUpper Method Implementation
-#### To implement the ToUpper method, you must reference its class (StringUtils) and the correct method (ToUpper) as shown below. Enter the argument between the parenthesis.
+#### To implement the ToUpper method, you must reference its class (StringUtils) and the correct method (ToUpper) as shown below. Enter an argument between the parenthesis.
 ``` Csharp
 StringUtils.ToUpper(input)
 ```
@@ -59,7 +59,7 @@ public static string ToLower(string input)
 
 ### ToLower Method Implementation
 
-#### To implement the ToLower method, you must reference its class (StringUtils) and the correct method (ToLower) as shown below. Enter the argument between the paranthesis.
+#### To implement the ToLower method, you must reference its class (StringUtils) and the correct method (ToLower) as shown below. Enter an argument between the paranthesis.
 ```Csharp
 StringUtils.ToLower(input)
 ```
@@ -83,7 +83,7 @@ public static int Length(string input)
 #### I think this one has an error ngl
 ### Length Method Implementation
 
-####  To implement the Length method, you must reference its class (StringUtils) and the correct method (Length) as shown below. Enter the argument between the paranthesis.
+####  To implement the Length method, you must reference its class (StringUtils) and the correct method (Length) as shown below. Enter an argument between the paranthesis.
 ###### :bulb: Tip: Using the correct class is crucial for using the correct method, as some classes might share method names.
 ```Csharp
 StringUtils.Length(input);
@@ -105,7 +105,7 @@ public static string Reverse(string input)
     }
 ```
 ### Reverse Method Implementation
-#### To implement the Reverse method, you must reference its class (StringUtils) and the correct method (Reverse) as shown below. Enter the argument between the parenthesis.
+#### To implement the Reverse method, you must reference its class (StringUtils) and the correct method (Reverse) as shown below. Enter an argument between the parenthesis.
 ```Csharp
 StringUtils.Reverse(input);
 ```
@@ -130,7 +130,7 @@ public static int CountVowels(string input)
     }
 ```
 ### CountVowels Method Implementation
-#### To implement the CountVowels method, you must reference its class (StringUtils) and the correct method (CountVowels) as shown below. Enter the argument between the parenthesis.
+#### To implement the CountVowels method, you must reference its class (StringUtils) and the correct method (CountVowels) as shown below. Enter an argument between the parenthesis.
 ```Csharp
 StringUtils.CountVowels(input);
 ```
@@ -156,7 +156,7 @@ public static int CountConsonants(string input)
     }
 ```
 ### CountConsonants Method Implementation
-#### To implement the CountConsonants method, you must reference its class (StringUtils) and the correct method (CountConsonants) as shown below. Enter the argument between the parenthesis.
+#### To implement the CountConsonants method, you must reference its class (StringUtils) and the correct method (CountConsonants) as shown below. Enter an argument between the parenthesis.
 ```Csharp
 StringUtils.CountConsonants(example);
 ```
@@ -182,6 +182,292 @@ public static bool HasLetter(char letter, string input)
         }
         return false;
     }
+```
+### HasLetter Method Implementation
+#### To implement the HasLetter method, you must reference its class (StringUtils) and the correct method (HasLetter) as shown below. Enter an argument between the parenthesis.
+```Csharp
+StringUtils.HasLetter(letter, input)
+```
+
+### VowelsToLower Method
+#### The VowelsToLower method allows the implementor to convert uppercase vowels into lowercase vowels.
+##### Input: (String) Input
+##### Output: (String)
+```Csharp
+public static string VowelsToLower(string input)
+    {
+        string output = "";
+        for (int i = 0; i < input.Length; i++)
+        {
+            if (input[i] == 'A' || input[i] == 'E' || input[i] == 'I' || input[i] == 'O' || input[i] == 'U')
+            {
+                output += (char)(input[i] - 'A' + 'a');
+            }
+            else
+                output += input[i];
+
+        }
+        return output;
+    }
+```
+### VowelsToLower Method Implementation
+#### To implement the VowelsToLower method, you must reference its class(StringUtils) and the correct method (VowelsToLower) as shown below. Enter an argument between the parenthesis.
+```Csharp
+StringUtils.VowelsToLower(input);
+```
+
+### VowelsToUpper
+#### The VowelsToUpper method allows the implementor to convert lowercase vowels into uppercase vowels.
+##### Input: (String) Input
+##### Output: (String)
+```Csharp
+public static string VowelsToUpper(string input)
+    {
+        string output = "";
+        for (int i = 0; i < input.Length; i++)
+        {
+            if (input[i] == 'a' || input[i] == 'e' || input[i] == 'i' || input[i] == 'o' || input[i] == 'u')
+            {
+                output += (char)(input[i] - 'a' + 'A');
+            }
+            else
+                output += input[i];
+        }
+        return output;
+    }
+```
+### VowelsToUpper Method Implementation
+#### To implement the VowelsToUpper method, you must reference its class (StringUtils) and the correct method (VowelsToUpper) as shown below. Enter an argument between the parenthesis.
+```Csharp
+StringUtils.VowelsToUpper(input);
+```
+
+### Extend Method
+#### The Extend method allows the implementor to extend the string with duplicated letters.
+##### Input: (String) Input
+##### Output: (String)
+```Csharp
+public static string Extend(string input)
+    {
+        string output = "";
+        for (int i = 0; i < input.Length; i++)
+        {
+            output += input[i];
+            output += input[i];
+        }
+        return output;
+    }
+```
+
+### Extend Method Implementation
+#### To implement the Extend method, you must reference its class (StringUtils) and the correct method (Extend) as shown below. Enter an argument between the parenthesis.
+```Csharp
+StringUtils.Extend(input);
+```
+
+### Scramble Method
+#### The Scramble method allows the implementor to scramble the order of letters within a string.
+##### Input: (String) Input
+##### Output: (String)
+```Csharp
+public static string Scramble(string input)
+    {
+        // int count = 2;
+        string output = "";
+        for (int i = 0; i < input.Length; i++)
+        {
+            if (i == 0 || i == input.Length)
+            {
+                output += input[i];
+            }
+            else if (i % 2 != 0)
+            {
+                output += input[i + 1];
+            }
+            else if (i % 2 == 0)
+            {
+                output += input[i - 1];
+            }
+        }
+        return output;
+    }
+```
+### Scramble Method Implementation
+#### To implement the Scramble method, you must reference its class (StringUtils) and the correct method (Extend) as shown below. Enter an argument between the parenthesis.
+```Csharp
+StringUtils.Scramble(input);
+```
+
+> ## Math Utilities
+### Power Method
+#### The Power method allows the implementor to multiply a number x by itself y amount of times.
+##### Input: (Int, Decimal, Double) x, (Int, Decimal, Double) y
+##### Output: (Int, Decimal, Double)
+```Csharp
+public static int Power(int x, int y)
+        {
+            int z = x;
+            for (int i = y; i > 1; i--)
+            {
+                z *= x;
+            }
+            return z;
+        }
+```
+#### To implement the Power method, you must reference its class (MathUtils) and the correct method (Power) as shown below. Enter an argument between the parenthesis.
+```Csharp
+int x = 4;
+int y = 3;
+
+MathUtils.Power(x,y);
+```
+### SquareRoot Method
+#### The SquareRoot method allows the implementor to square root a number.
+##### Input: (Int, Double, Decimal) x
+##### Output: (Int, Double, Decimal)
+```Csharp
+public static double SquareRoot(double x)
+        {
+            if (x < 2)
+                return x;
+
+            double y = x;
+            double z = (y + (x / y)) / 2;
+
+            while (MathUtils.AbsoluteValue(y - z) > 0)
+            {
+                y = z;
+                z = (y + (x / y)) / 2;
+
+            }
+            return z;
+        }
+```
+### SquareRoot Method Implementation
+#### To implement the SquareRoot method, you must reference its class (MathUtils) and the correct method (SquareRoot) as shown below. Enter an argument between the parenthesis.
+```Csharp
+MathUtils.SquareRoot(x);
+```
+
+### AddNumbers Method
+#### The AddNumbers method allows the implementor to add a number x and a number y to find and print the sum.
+##### Input: (Int, Double, Decimal) x, (Int, Double, Decimal) y
+##### Output: (Int, Double, Decimal)
+```Csharp
+ public static int AddNumbers(int x, int y)
+        {
+            int z = x + y;
+            return z;
+        }
+```
+### AddNumbers Method Implementation
+#### To implement the AddNumbers method, you must reference its class (MathUtils) and the correct method (AddNumbers) as shown below. Enter an argument between the parenthesis.
+```Csharp
+MathUtils.AddNumbers(x, y);
+```
+
+### SubtractNum Method
+#### The SubtractNum method allows the implementor to subtract a number x from a number y, returning the result.
+##### Input: (Int, Double, Decimal) x, (Int, Double, Decimal) y
+##### Output: (Int, Double, Decimal)
+```Csharp
+ public static int SubtractNum(int x, int y)
+        {
+            int z = x - y;
+            return z;
+        }
+```
+### SubtractNum Method Implementation
+#### To implement the SubtractNum method, you must reference its class (MathUtils) and the correct method (SubtractNum) as shown below. Enter an argument between the parenthesis.
+```Csharp
+MathUtils.SubtractNum(x, y);
+```
+
+### DivideNums Method
+#### The DivideNums method allows the implementor to divide a number x by a number y to find and print the quotient.
+##### Input: (Int, Double, Decimal) x, (Int, Double, Decimal) y
+##### Output: (Int, Double, Decimal)
+```Csharp
+public static int DivideNums(int x, int y)
+        {
+            int z = x / y;
+            return z;
+        }
+```
+### DivideNums Method Implementation
+#### To implement the DivideNums method, you must reference its class (MathUtils) and the correct method (DivideNums) as shown below. Enter an argument between the parenthesis.
+```Csharp
+MathUtils.DivideNums(x, y);
+```
+
+### MultiplyNums Method
+#### The MultiplyNums method allows the implementor to multiply a number x by a number y to find and print the product.
+##### Input: (Int, Double, Decimal) x, (Int, Double, Decimal) y
+##### Output: (Int, Double, Decimal)
+```Csharp
+public static double MultiplyNums(int x, int y)
+        {
+            int z = x * y;
+            return z;
+        }
+```
+
+### MultiplyNums Method Implementation
+#### To implement the MultiplyNums method, you must reference its class (MathUtils) and the correct method (MultiplyNums) as shown below. Enter an argument between the parenthesis.
+```Csharp
+MathUtils.Multiply(x, y)
+```
+
+### FindMax Method
+#### The FindMax method allows the implementor to find the largest value between a number x and a number y.
+##### Input: (Int, Double, Decimal) x, (Int, Double, Decimal) y
+##### Output: (Int, Double, Decimal)
+```Csharp
+public static int FindMax(int x, int y)
+        {
+            if (x > y)
+            {
+                int max = x;
+                return max;
+            }
+            else
+            {
+                int max = y;
+                return max;
+            }
+        }
+```
+### FindMax Method Implementation
+#### To implement the FindMax method, you must reference its class (MathUtils) and the correct method (FindMax) as shown below. Enter an argument between the parenthesis.
+```Csharp
+MathUtils.FindMax(x, y);
+```
+
+
+### FindMin Method
+#### The FindMin method allows the implementor to find the smallest value between a number x and a number y.
+##### Input: (Int, Double, Decimal) x, (Int, Double, Decimal) y
+##### Output: (Int, Double, Decimal)
+```Csharp
+public static int FindMin(int x, int y)
+        {
+            if (x > y)
+            {
+                int min = y;
+                return min;
+            }
+            else
+            {
+                int min = x;
+                return min;
+            }
+        }
+```
+
+### FindMin Method Implementation
+#### To implement the FindMin method, you must reference its class (MathUtils) and the correct method (FindMin) as shown below. Enter an argument between the parenthesis.
+```Csharp
+MathUtils.FindMin(x, y);
 ```
 
 
