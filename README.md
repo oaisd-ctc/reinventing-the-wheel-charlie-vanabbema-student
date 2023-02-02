@@ -186,7 +186,7 @@ public static bool HasLetter(char letter, string input)
 ### HasLetter Method Implementation
 #### To implement the HasLetter method, you must reference its class (StringUtils) and the correct method (HasLetter) as shown below. Enter an argument between the parenthesis.
 ```Csharp
-StringUtils.HasLetter(letter, input)
+StringUtils.HasLetter(letter, input);
 ```
 
 ### VowelsToLower Method
@@ -469,6 +469,120 @@ public static int FindMin(int x, int y)
 ```Csharp
 MathUtils.FindMin(x, y);
 ```
+
+### AbsoluteValue Method
+#### The AbsoluteValue method allows the implementor to find the absolute value of a number x.
+##### Input: (Int, Double, Decimal) x, (Int, Double, Decimal) y
+##### Output: (Int, Double, Decimal)
+```Csharp
+public static int AbsoluteValue(int x)
+        {
+            if (x < 0)
+            {
+                x = x * -1;
+                return x;
+            }
+            else
+            {
+                return x;
+            }
+        }
+```
+
+### AbsoluteValue Method Implementation
+#### To implement the AbsoluteValue method, you must first reference its class (MathUtils) and the correct method (AbsoluteValue) as shown below. Enter an argument between the parenthesis.
+```Csharp
+MathUtils.AbsoluteValue(x);
+```
+
+### Sign Method
+#### The Sign method allows the implementor to check whether a number is greater than, equal to, or less than zero, and returns a number corresponding.
+##### Input: (Int, Double, Decimal) x,
+##### Output (Int, Double, Decimal)
+```Csharp
+public static int Sign(int x)
+        {
+
+            if (x > 0)
+            {
+                int y = 1;
+                return y;
+            }
+            else if (x < 0)
+            {
+                int y = -1;
+                return y;
+            }
+            else
+            {
+                int y = 0;
+                return y;
+            }
+        }
+```
+
+### Sign Method Implementation
+#### To implement the Sign method, you must first reference its class (MathUtils) and the correct method (Sign) as shown below. Enter an argument between the parenthesis.
+```Csharp
+MathUtils.Sign(x);
+```
+
+### AreaOfRect Method
+#### The AreaOfRect method allows the implementor to find the area of a rectangle using the length and the width.
+##### Input: (Int, Double, Decimal) length, (Int, Double, Decimal) width
+##### Output: (Int, Double, Decimal)
+```Csharp
+ public static int AreaOfRect(int length, int width)
+        {
+            int ans = length * width;
+            return ans;
+        }
+```
+
+### AreaOfRect Method Implementation
+#### To implement the AreaOfRect method, you must first reference its class (MathUtils) and the correct method (Sign) as shown below. Enter an argument between the parenthesis.
+```Csharp
+MathUtils.AreaOfRect(length, width);
+```
+
+### AreaOfRhombus
+#### The AreaOfRhombus method allows the implementor to find the area of a rhombus using the length and the width.
+##### Input: (Int, Double, Decimal) x, (Int, Double, Decimal) y
+##### Output: (Int, Double, Decimal)
+```Csharp
+public static int AreaOfRhombus(int x, int y)
+        {
+            int math = x * y;
+            int answer = math / 2;
+            return answer;
+        }
+```
+### AreaOfRhombus Method Implementation
+#### To implement the AreaOfRhombus method, you must first reference its class (MathUtils) and the correct method (Sign) as shown below. Enter an argument between the parenthesis.
+```Csharp
+MathUtils.AreaOfRhombus(x, y);
+```
+
+### SurfaceAreaOfCube Method
+#### The SurfaceAreaOfCube method allows the implementor to find the surface area of a cube using the value of the edge.
+##### Input: (Int, Double, Decimal) x
+##### Output: (Int, Double, Decimal)
+```Csharp
+ public static int SurfaceAreaOfCube(int x)
+        {
+            int math = MathUtils.Power(x, 2);
+            int answer = (int)MathUtils.MultiplyNums(math, 6);
+
+            return answer;
+        }
+```
+### SurfaceAreaOfCube Method Implementation
+#### To implement the SurfaceAreaOfCube method, you must first reference its class (MathUtils) and the correct method (SurfaceAreaOfCube) as shown below. Enter an argument between the parenthesis.
+```Csharp
+MathUtils.SurfaceAreaOfCube(x);
+```
+> ## Array Utilities
+### FindAverage Method
 
 
 

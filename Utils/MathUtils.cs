@@ -347,32 +347,54 @@ namespace MyUtilities
             return ans;
         }
 
+        public static decimal AreaOfRect(decimal length, decimal width)
+        {
+            decimal ans = length * width;
+            return ans;
+        }
+
+
+
         public static int AreaOfRhombus(int x, int y)
         {
-            int rat = x * y;
-            int answer = rat / 2;
+            int math = x * y;
+            int answer = math / 2;
             return answer;
         }
 
         public static double AreaOfRhombus(double x, double y)
         {
-            double rat = x * y;
-            double answer = rat / 2;
+            double math = x * y;
+            double answer = math / 2;
+            return answer;
+        }
+
+         public static decimal AreaOfRhombus(decimal x, decimal y)
+        {
+            decimal math = x * y;
+            decimal answer = math / 2;
             return answer;
         }
 
         public static int SurfaceAreaOfCube(int x)
         {
-            int rat = MathUtils.Power(x, 2);
-            int answer = (int)MathUtils.MultiplyNums(rat, 6);
+            int math = MathUtils.Power(x, 2);
+            int answer = (int)MathUtils.MultiplyNums(math, 6);
 
             return answer;
         }
 
         public static double SurfaceAreaOfCube(double x)
         {
-            double rat = MathUtils.Power(x, 2);
-            double answer = MathUtils.MultiplyNums(rat, 6);
+            double math = MathUtils.Power(x, 2);
+            double answer = MathUtils.MultiplyNums(math, 6);
+            return answer;
+        }
+
+        public static decimal SurfaceAreaOfCube(decimal x)
+        {
+            decimal math = MathUtils.Power(x, 2);
+            decimal answer = MathUtils.MultiplyNums(math, 6);
             return answer;
         }
 
