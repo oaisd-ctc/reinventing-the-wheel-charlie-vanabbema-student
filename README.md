@@ -1,6 +1,13 @@
 # Reinventing The Wheel
 ### Developed By: Charlie Van Abbema and Blair Ciolk
 
+#  FAQ:
+## *What is **Reinventing the Wheel?***
+#### **Reinventing the Wheel** is an all-in-one utility tool for those who might need more methods for their projects.  
+  
+## *Why was this package made?*
+#### The main goal of this project was to help other people with methods that they cannot figure out with pre-made methods that are easily integrated within your code. 
+
 ## ***Code Snippets, Uses and Descriptions***
 > ## String Utilites
  ### ToUpper Method
@@ -583,15 +590,11 @@ MathUtils.SurfaceAreaOfCube(x);
 ```
 > ## Array Utilities
 ### FindAverage Method
+####
 
 
 
-#  FAQ:
-## *What is **Reinventing the Wheel?***
-#### **Reinventing the Wheel** is an all-in-one utility tool for those who might need more methods for their projects.  
-  
-## *Why was this package made?*
-#### The main goal of this project was to help other people with methods that they cannot figure out with pre-made methods that are easily integrated within your code. 
+
 
 ### ***Images***
 ![some_image_here](some_filepath_here)
