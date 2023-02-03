@@ -734,17 +734,3 @@ public static int FindProduct(int[] x)
 ```Csharp
 ArrayUtils.FindProduct(x[]);
 ```
-
-
-
-
-### ***Images***
-![some_image_here](some_filepath_here)
-*Here's a super helpful caption*
-
-### ***Admonition***
-> :warning: **Warning:** Do not push the big red button.
-
-> :memo: **Note:** Sunrises are beautiful.
-
-> :bulb: **Tip:** Remember to appreciate the little things in life.
