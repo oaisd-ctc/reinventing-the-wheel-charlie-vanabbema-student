@@ -40,7 +40,7 @@ public static string ToUpper(string input)
 ``` Csharp
 StringUtils.ToUpper(input)
 ```
-
+###### :bulb: Tip: Using the correct class is crucial for using the correct method, as some classes might share method names.
 ### ToLower Method
 
 The ToLower method allows the implementor to convert uppercase characters in a string into lowercase characters.
@@ -91,7 +91,6 @@ public static int Length(string input)
 ### Length Method Implementation
 
 ####  To implement the Length method, you must reference its class (StringUtils) and the correct method (Length) as shown below. Enter an argument between the paranthesis.
-###### :bulb: Tip: Using the correct class is crucial for using the correct method, as some classes might share method names.
 ```Csharp
 StringUtils.Length(input);
 ```
