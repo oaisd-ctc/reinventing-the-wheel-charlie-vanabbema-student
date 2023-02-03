@@ -22,6 +22,17 @@ namespace MyUtilities
             return z;
         }
 
+        public static decimal Power(decimal x, decimal y)
+        {
+            decimal z = x;
+            for (decimal i = y; i > 1; i--)
+            {
+                z *= x;
+            }
+            // Console.WriteLine(z);
+            return z;
+        }
+
         public static double SquareRoot(double x)
         {
             if (x < 2)
@@ -56,6 +67,23 @@ namespace MyUtilities
             return z;
         }
 
+        public static decimal SquareRoot(decimal x)
+        {
+            if (x < 2)
+                return x;
+
+            decimal y = x;
+            decimal z = (y + (x / y)) / 2;
+
+            while (MathUtils.AbsoluteValue(y - z) > 0)
+            {
+                y = z;
+                z = (y + (x / y)) / 2;
+
+            }
+            return z;
+        }
+
         public static int AddNumbers(int x, int y)
         {
             int z = x + y;
@@ -64,6 +92,12 @@ namespace MyUtilities
         public static double AddNumbers(double x, double y)
         {
             double z = x + y;
+            return z;
+        }
+
+        public static decimal AddNumbers(decimal x, decimal y)
+        {
+            decimal z = x + y;
             return z;
         }
 
@@ -79,6 +113,12 @@ namespace MyUtilities
             return z;
         }
 
+        public static decimal SubtractNum(decimal x, decimal y)
+        {
+            decimal z = x - y;
+            return z;
+        }
+
         public static int DivideNums(int x, int y)
         {
             int z = x / y;
@@ -87,6 +127,12 @@ namespace MyUtilities
         public static double DivideNums(double x, double y)
         {
             double z = x / y;
+            return z;
+        }
+
+        public static decimal DivideNums(decimal x, decimal y)
+        {
+            decimal z = x / y;
             return z;
         }
 
@@ -101,6 +147,13 @@ namespace MyUtilities
             double z = x * y;
             return z;
         }
+
+        public static decimal MultiplyNums(decimal x, decimal y)
+        {
+            decimal z = x * y;
+            return z;
+        }
+
 
         public static int FindMax(int x, int y)
         {
@@ -130,6 +183,20 @@ namespace MyUtilities
             }
         }
 
+        public static decimal FindMax(decimal x, decimal y)
+        {
+            if (x > y)
+            {
+                decimal max = x;
+                return max;
+            }
+            else
+            {
+                decimal max = y;
+                return max;
+            }
+        }
+
         public static int FindMin(int x, int y)
         {
             if (x > y)
@@ -154,6 +221,19 @@ namespace MyUtilities
             else
             {
                 double min = x;
+                return min;
+            }
+        }
+        public static decimal FindMin(decimal x, decimal y)
+        {
+            if (x > y)
+            {
+                decimal min = y;
+                return min;
+            }
+            else
+            {
+                decimal min = x;
                 return min;
             }
         }
@@ -236,6 +316,25 @@ namespace MyUtilities
             }
         }
 
+        public static decimal Sign(decimal x)
+        {
+            if (x > 0)
+            {
+                var y = 1;
+                return y;
+            }
+            else if (x < 0)
+            {
+                var y = -1;
+                return y;
+            }
+            else
+            {
+                var y = 0;
+                return y;
+            }
+        }
+
         public static int AreaOfRect(int length, int width)
         {
             int ans = length * width;
@@ -248,32 +347,54 @@ namespace MyUtilities
             return ans;
         }
 
+        public static decimal AreaOfRect(decimal length, decimal width)
+        {
+            decimal ans = length * width;
+            return ans;
+        }
+
+
+
         public static int AreaOfRhombus(int x, int y)
         {
-            int rat = x * y;
-            int answer = rat / 2;
+            int math = x * y;
+            int answer = math / 2;
             return answer;
         }
 
         public static double AreaOfRhombus(double x, double y)
         {
-            double rat = x * y;
-            double answer = rat / 2;
+            double math = x * y;
+            double answer = math / 2;
+            return answer;
+        }
+
+         public static decimal AreaOfRhombus(decimal x, decimal y)
+        {
+            decimal math = x * y;
+            decimal answer = math / 2;
             return answer;
         }
 
         public static int SurfaceAreaOfCube(int x)
         {
-            int rat = MathUtils.Power(x, 2);
-            int answer = (int)MathUtils.MultiplyNums(rat, 6);
+            int math = MathUtils.Power(x, 2);
+            int answer = (int)MathUtils.MultiplyNums(math, 6);
 
             return answer;
         }
 
         public static double SurfaceAreaOfCube(double x)
         {
-            double rat = MathUtils.Power(x, 2);
-            double answer = MathUtils.MultiplyNums(rat, 6);
+            double math = MathUtils.Power(x, 2);
+            double answer = MathUtils.MultiplyNums(math, 6);
+            return answer;
+        }
+
+        public static decimal SurfaceAreaOfCube(decimal x)
+        {
+            decimal math = MathUtils.Power(x, 2);
+            decimal answer = MathUtils.MultiplyNums(math, 6);
             return answer;
         }
 

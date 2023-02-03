@@ -135,6 +135,16 @@ public class Tests
     }
 
     [Fact]
+    public void SubtractNumTest()
+    {
+        double desiredResult = 26.310000000000002;
+        double x = 155.28;
+        double y = 128.97;
+        Assert.Equal(desiredResult, MathUtils.SubtractNum(x, y));
+    }
+
+
+    [Fact]
     public void AddNumbersTest()
     {
 
@@ -264,18 +274,33 @@ public class Tests
     public void FindMaxArrayTest()
     {
         int desiredResult = 6;
-        int[] x = new int[] { 3, 6 , 4};
+        int[] x = new int[] { 3, 6, 4 };
         Assert.Equal(desiredResult, ArrayUtils.FindMax(x));
     }
 
     [Fact]
     public void FindMinArrayTest()
     {
-     double desiredResult = 4;
-     double[] x = new double[] {6, 4, 5};
-     Assert.Equal(desiredResult, ArrayUtils.FindMin(x));   
+        double desiredResult = 4;
+        double[] x = new double[] { 6, 4, 5 };
+        Assert.Equal(desiredResult, ArrayUtils.FindMin(x));
     }
 
-    
+    [Fact]
+    public void FindSumTest()
+    {
+        double desiredResult = 17;
+        double[] x = new double[] { 6, 5.5, 5.5 };
+        Assert.Equal(desiredResult, ArrayUtils.FindSum(x));
+    }
+
+    [Fact]
+    public void FindProductTest()
+    {
+        double desiredResult = 39.375;
+        double[] x = new double[] { 2.5, 3.5, 4.5 };
+        Assert.Equal(desiredResult, ArrayUtils.FindProduct(x));
+    }
+
 
 }
